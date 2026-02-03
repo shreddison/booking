@@ -19,7 +19,7 @@ const defaultPeople: Person[] = [
   },
   {
     id: "MARCO_ANTONIO_PRIETO",
-    name: 'AGUSTINA	DIETRICH CARAMES',
+    name: 'AGUSTINA	DIETRICH',
     activationDate: '05.11.2021',
     status: 'renovar',
   },
@@ -84,7 +84,7 @@ export default function TableComponent() {
             </p>
           </div>
           <div className="flex shrink-0 items-center gap-x-4">
-            <div className="hidden sm:flex sm:flex-col sm:items-end">
+            <div className="flex sm:flex-col sm:items-end">
               {/* <p className="text-sm leading-6 text-gray-900 dark:text-white">{person.role}</p> */}
 
               {person.status ? (
@@ -95,7 +95,7 @@ export default function TableComponent() {
                     <div className="h-1.5 w-1.5 rounded-full bg-current" />
                   </div>
                   <p className="text-xs leading-5 text-gray-500 dark:text-gray-400">
-                    {person.status === 'activo' ? 'Activo' : 'Renovar 04.02.26'}
+                    {person.status === 'activo' ? 'Activo' : '10 dias'}
                   </p>
                 </div>
               ) : null}
