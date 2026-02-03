@@ -1,0 +1,16 @@
+node_modules
+.next
+.vercel
+.turbo
+dist
+build
+public
+.git
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+.env
+.env.*
+coverage
+out
+.output
