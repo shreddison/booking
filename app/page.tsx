@@ -39,22 +39,22 @@ export default function Home() {
 
     return (
       <div className="grid grid-cols-2 gap-4">
-        <div className="p-4">MARTINA	BRANDLI</div>
+        <div className="p-4">MARTINA BRANDLI</div>
         <button
           onClick={() => navigateToSite("ALBERTO_MEDINA")}
           className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
         >
           Book
         </button>
-        <div className="p-4">JAVIER	GONZALEZ BARAHONA</div>
+        <div className="p-4">AGUSTINA	DIETRICH CARAMES</div>
         <button
-          onClick={() => navigateToSite("ALBERTO_MEDINA")}
+          onClick={() => navigateToSite("MARCO_ANTONIO_PRIETO")}
           className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
         >
           Book
         </button>
 
-        <div className="p-4">Edison Lizano</div>
+        <div className="p-4">EDISON LIZANO</div>
         <button
           onClick={() => navigateToSite("JORGE_WILFREDO_PERALTA")}
           className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
