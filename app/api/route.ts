@@ -18,6 +18,8 @@ export async function GET(req: NextRequest) {
 
   const myIdTravelResponse: GeneratorResponse = await createMyIdUrl(token);
 
+console.log("Generated MyIDTravel response:", myIdTravelResponse);
+
   if (!myIdTravelResponse) {
     return NextResponse.json({ error: "Failed to generate MyIDTravel URL" }, { status: 404 });
   }

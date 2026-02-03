@@ -84,7 +84,7 @@ export default function Home() {
           />
 
           {
-            isAllowed && renderUsers()
+            !isAllowed && renderUsers()
           }
         </div>
       </main>
