@@ -44,7 +44,7 @@ export default function TableComponent() {
       .then((res) => res.json())
       .then((response: GeneratorResponse) => {
         console.log("Redirecting to:", JSON.stringify(response));
-        const newWindow = window.open(response.urlToRedirect, "_blank", "noopener,noreferrer");
+        const newWindow = window.open(response.urlToRedirect, "noopener,noreferrer");
         if (newWindow) { newWindow.opener = null };
       })
       .catch(console.error)
