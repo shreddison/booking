@@ -79,28 +79,10 @@ export default function TableComponent() {
               <span className="absolute inset-x-0 -top-px bottom-0" />
               {person.name}
             </p>
-            <p className="mt-1 flex items-center gap-2 text-xs leading-5 text-gray-500 dark:text-gray-400">
-              <span className="relative truncate">Activo desde: {person.activationDate}</span>
-            </p>
+
           </div>
           <div className="flex shrink-0 items-center gap-x-4">
-            <div className="flex sm:flex-col sm:items-end">
-              {/* <p className="text-sm leading-6 text-gray-900 dark:text-white">{person.role}</p> */}
 
-              {person.status ? (
-                <div className="mt-1 flex items-center gap-x-1.5">
-                  <div
-                    className={`flex-none rounded-full p-1 ${person.status === 'activo' ? 'bg-emerald-500/20 dark:bg-emerald-500/30' : 'bg-amber-500/20 dark:bg-amber-500/30'}`}
-                  >
-                    <div className="h-1.5 w-1.5 rounded-full bg-current" />
-                  </div>
-                  <p className="text-xs leading-5 text-gray-500 dark:text-gray-400">
-                    {person.status === 'activo' ? 'Activo' : '10 dias'}
-                  </p>
-                </div>
-              ) : null}
-
-            </div>
             <ChevronRightIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400 dark:text-gray-500" />
           </div>
         </li>
