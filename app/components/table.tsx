@@ -19,10 +19,10 @@ const defaultPeople: Person[] = [
     id: "MARCO_ANTONIO_PRIETO",
     name: 'AGUSTINA	DIETRICH',
   },
-  // {
-  //   id: "JORGE_WILFREDO_PERALTA",
-  //   name: 'EDISON LIZANO',
-  // },
+  {
+    id: "JORGE_WILFREDO_PERALTA",
+    name: 'EDISON LIZANO',
+  },
   {
     id: "MILAGROS_VARGAS_GUERRA",
     name: 'FEDERICO JAVIER VICCO',
