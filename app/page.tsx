@@ -4,9 +4,8 @@ import { GeneratorResponse } from "./services/myIdService";
 import TableComponent from "./components/table";
 
 export default function Home() {
-  const [secret, setSecret] = React.useState("");
-
-  const isAllowed = secret.trim().toLowerCase() === "barajas";
+  // const [secret, setSecret] = React.useState("");
+  // const isAllowed = secret.trim().toLowerCase() === "barajas";
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -16,8 +15,7 @@ export default function Home() {
             MyId 2.0
           </h1>
 
-
-          {!isAllowed && (
+          {/* {!isAllowed && (
             <input
               aria-label="secret-code"
               placeholder="Enter code"
@@ -25,17 +23,15 @@ export default function Home() {
               onChange={(e) => setSecret(e.target.value)}
               className="mb-4 w-full max-w-sm rounded border px-3 py-2 text-sm"
             />
-          )}
+          )} */}
 
-
-
-          {
+          {/* {
             !isAllowed && (<div className="text-sm text-red-600">
               Access denied. Please enter the correct secret code.
             </div>)
-          }
+          } */}
 
-          {isAllowed && <TableComponent />}
+          <TableComponent />
 
         </div>
       </main>
