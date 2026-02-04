@@ -13,21 +13,19 @@ type Person = {
 const defaultPeople: Person[] = [
   {
     id: "ALBERTO_MEDINA",
-    name: 'MARTINA BRANDLI',
-    activationDate: '12.06.2022',
-    status: 'activo',
+    name: 'MARTINA BRANDLI'
   },
   {
     id: "MARCO_ANTONIO_PRIETO",
     name: 'AGUSTINA	DIETRICH',
-    activationDate: '05.11.2021',
-    status: 'renovar',
   },
+  // {
+  //   id: "JORGE_WILFREDO_PERALTA",
+  //   name: 'EDISON LIZANO',
+  // },
   {
-    id: "JORGE_WILFREDO_PERALTA",
-    name: 'EDISON LIZANO',
-    activationDate: '30.09.2024',
-    status: 'activo',
+    id: "MILAGROS_VARGAS_GUERRA",
+    name: 'FEDERICO JAVIER VICCO',
   }
 ]
 
