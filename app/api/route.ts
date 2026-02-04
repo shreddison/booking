@@ -18,11 +18,16 @@ export async function GET(req: NextRequest) {
 
   const myIdTravelResponse: GeneratorResponse = await createMyIdUrl(token);
 
-console.log("Generated MyIDTravel response:", myIdTravelResponse);
+  // console.log("Generated MyIDTravel response:", myIdTravelResponse);
 
   if (!myIdTravelResponse) {
     return NextResponse.json({ error: "Failed to generate MyIDTravel URL" }, { status: 404 });
   }
 
-  return NextResponse.json( myIdTravelResponse );
+  if (!myIdTravelResponse.urlToRedirect) {
+    return NextResponse.json({ error: "Failed to generate MyIDTravel URL" }, { status: 404 });
+  }
+
+  return NextResponse.redirect(myIdTravelResponse.urlToRedirect, 302);
+
 }

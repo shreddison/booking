@@ -37,16 +37,17 @@ export default function TableComponent() {
 
   function navigateToSite(id: string) {
     setLoadingId(true);
+    window.location.href = `/api?userId=${id}`;
 
-    fetch(`/api/?userId=${id}`)
-      .then((res) => res.json())
-      .then((response: GeneratorResponse) => {
-        console.log("Redirecting to:", JSON.stringify(response));
-        const newWindow = window.open(response.urlToRedirect, "noopener,noreferrer");
-        if (newWindow) { newWindow.opener = null };
-      })
-      .catch(console.error)
-      .finally(() => setLoadingId(false));
+    // fetch(`/api/?userId=${id}`)
+    //   .then((res) => res.json())
+    //   .then((response: GeneratorResponse) => {
+    //     console.log("Redirecting to:", JSON.stringify(response));
+    //     const newWindow = window.open(response.urlToRedirect, "noopener,noreferrer");
+    //     if (newWindow) { newWindow.opener = null };
+    //   })
+    //   .catch(console.error)
+    //   .finally(() => setLoadingId(false));
   }
 
 
